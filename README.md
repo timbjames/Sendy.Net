@@ -10,7 +10,7 @@ If you have recently decided to use [Sendy](http://sendy.co/) over an existing e
 It is especially useful if you are creating your own user/client database, so are saving details prior to subscribing them to the email campaign/newsletter service.
 
 ## What is Sendy
-->![Sendy Logo](http://sendy.co/images/sendy-logo.jpg)<-
+![Sendy Logo](http://sendy.co/images/sendy-logo.jpg)
 > [Sendy](http://sendy.co/) is a self hosted email newsletter application that lets you send trackable emails via [Amazon Simple Email Service SES](http://aws.amazon.com/ses/). This makes it possible for you to send authenticated bulk emails at an insanely low price without sacrificing deliverability.
 
 ## The Sendy API
