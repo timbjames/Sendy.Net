@@ -1,7 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sendy.Net", "Sendy.Net\Sendy.Net.csproj", "{EC1A7862-5DA0-4FDD-B455-015F7B9D6004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sendy.Net.Samples", "Sendy.Net.Samples\Sendy.Net.Samples.csproj", "{9C4746EE-7B33-4729-834B-B3DB62129EE5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC1A7862-5DA0-4FDD-B455-015F7B9D6004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1A7862-5DA0-4FDD-B455-015F7B9D6004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1A7862-5DA0-4FDD-B455-015F7B9D6004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1A7862-5DA0-4FDD-B455-015F7B9D6004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4746EE-7B33-4729-834B-B3DB62129EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4746EE-7B33-4729-834B-B3DB62129EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4746EE-7B33-4729-834B-B3DB62129EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4746EE-7B33-4729-834B-B3DB62129EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
