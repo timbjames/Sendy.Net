@@ -16,11 +16,30 @@ It is especially useful if you are creating your own user/client database, so ar
 ## The Sendy API
 > [Sendy's API](http://sendy.co/api) is based on simple HTTP POST. Use the API to integrate Sendy programmatically with your website or application. We're working to include more APIs.
 
+##Campaign API
+The default Sendy API does not contain any functionality for creating Campaigns. You can download a small zip file which contains a Campaign API from [here](http://forum.sendy.co/discussion/768/added-some-api-functionality/p1)
+
 ## Helpful Resources
 
 If you would like some help with getting set up, or you are thinking of setting up Sendi on Azure, then take a look at Scott Hanselman's Blog article. 
 
 [Hanselman on Sendy](http://www.hanselman.com/blog/InstallingSendyAPHPAppOnWindowsAzureToSendInexpensiveNewsletterEmailViaAmazonSES.aspx)
+[Campaign API](http://forum.sendy.co/discussion/768/added-some-api-functionality/p1)
+
+## Issues I encountered
+
+###Sendy 1.1.6
+My installation of Sendy was on a Windows Server with Windows Server 2008 R2 Standard 64-Bit OS installed.
+When setting up the bounces and complaints handling, Amazon AWS would sit at "Pending Confirmation". I delved into the php code, which Amazon AWS contacts when trying to certify your SNS Notification settings, and noticed that there is a line of code like this;
+    
+    $server_path_array = explode('includes/campaigns/bounces.php', $_SERVER['SCRIPT_FILENAME']);
+
+This looked harmful enough, until I realised that `$_SERVER['SCRIPT_FILENAME'])` was returning the path with backward slashes '\' instead of the expected forward slash '/'. As a result, the `certs/cacert.pem` file was not found and not certified.
+
+I could not find an elegant solution, so just hardcoded the path into the file and any other file where the `$server_path` was being set.
+
+###Campaign API
+The Campaign API would fail if your administrator user had set up a brand using the same email address. The Campaign API would attempt to get the app from the DB based on the email, but would not find it. This would basically break the whole api.
 
 ## Questions?
 Catch me in [JabbR](https://jabbr.net/#/rooms/general-chat) if you can.
