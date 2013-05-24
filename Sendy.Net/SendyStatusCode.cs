@@ -25,7 +25,9 @@ namespace Sendy.Net
         Some_fields_are_missing = 13,
         Invalid_email_address = 14,
         Already_subscribed = 15,
-        List_does_not_exist = 16
+        List_does_not_exist = 16,
+        Username_not_passed = 17,
+        Invalid_username = 18
 
     }
 

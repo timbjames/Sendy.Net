@@ -49,19 +49,23 @@ namespace Sendy.Net
                         return "Unscpecified status";
                     case StatusCode.Unsubscribed:
                         return "Unsubscribed";
+                    case StatusCode.Invalid_username:
+                        return "Invalid Username";
+                    case StatusCode.Username_not_passed:
+                        return "Username not passes";
                     default:
                         return "";
 
                 }
             }
         }
-    
+
         public string Response { get; set; }
         public string Parameters { get; set; }
 
-         /// <summary>
-        /// Maps the response status to our Enum SubscriptionStatus
-        /// Returns Subscription.Unspecified if not matched.
+        /// <summary>
+        /// <para>Maps the response status to our Enum SubscriptionStatus</para>
+        /// <para>Returns Subscription.Unspecified if not matched.</para>
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
@@ -72,17 +76,17 @@ namespace Sendy.Net
             value = value.TrimEnd('.').ToLower();
 
             // match result to enum            
-            for (var i = 0; i <= Enum.GetNames(typeof(StatusCode)).Length - 1; i ++)
+            for (var i = 0; i <= Enum.GetNames(typeof(StatusCode)).Length - 1; i++)
             {
                 if (Enum.GetName(typeof(StatusCode), i).ToLower().Replace("_", " ") == value)
                 {
                     return (StatusCode)Enum.Parse(typeof(StatusCode), Enum.GetName(typeof(StatusCode), i));
-                }                
-            }   
+                }
+            }
 
             return StatusCode.Unspecified;
 
         }
-        
+
     }
 }

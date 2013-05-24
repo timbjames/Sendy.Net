@@ -16,8 +16,8 @@ namespace Sendy.Net
         }
 
         /// <summary>
-        /// Calls Sendy API to subscribe user
-        /// API POST URL: http://your_sendy_installation/subscribe
+        /// <para>Calls Sendy API to subscribe user</para>
+        /// <para>API POST URL: http://your_sendy_installation/subscribe </para>
         /// </summary>
         /// <param name="listId"></param>
         /// <param name="email"></param>
@@ -28,8 +28,8 @@ namespace Sendy.Net
         }
 
         /// <summary>
-        /// Calls Sendy API to subscribe user
-        /// API POST URL: http://your_sendy_installation/subscribe
+        /// <para>Calls Sendy API to subscribe user</para>
+        /// <para>API POST URL: http://your_sendy_installation/subscribe </para>
         /// </summary>
         /// <param name="listId"></param>
         /// <param name="email"></param>
@@ -63,8 +63,8 @@ namespace Sendy.Net
         }
 
         /// <summary>
-        /// Calls Sendy API to unscubscribe user
-        /// API POST URL: http://your_sendy_installation/unsubscribe
+        /// <para>Calls Sendy API to unscubscribe user</para>
+        /// <para>API POST URL: http://your_sendy_installation/unsubscribe </para>
         /// </summary>
         /// <param name="listId"></param>
         /// <param name="email"></param>
@@ -96,8 +96,8 @@ namespace Sendy.Net
         }
 
         /// <summary>
-        /// Calls Sendy API to get the current status of a subscriber
-        /// API POST URL: http://your_sendy_installation/api/subscribers/subscription-status.php
+        /// <para>Calls Sendy API to get the current status of a subscriber</para>
+        /// <para>API POST URL: http://your_sendy_installation/api/subscribers/subscription-status.php </para>
         /// </summary>
         /// <param name="listId"></param>
         /// <param name="email"></param>
@@ -124,8 +124,8 @@ namespace Sendy.Net
         }
 
         /// <summary>
-        /// Calls Sendy API to get the total active subscriber count.
-        /// API POST URL: http://your_sendy_installation/api/subscribers/active-subscriber-count.php
+        /// <para>Calls Sendy API to get the total active subscriber count.</para>
+        /// <para>API POST URL: http://your_sendy_installation/api/subscribers/active-subscriber-count.php </para>
         /// </summary>
         /// <param name="listId"></param>
         /// <returns></returns>
