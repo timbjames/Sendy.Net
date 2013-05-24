@@ -24,6 +24,9 @@ The default Sendy API does not contain any functionality for creating Campaigns.
 If you would like some help with getting set up, or you are thinking of setting up Sendi on Azure, then take a look at Scott Hanselman's Blog article. 
 
 [Hanselman on Sendy](http://www.hanselman.com/blog/InstallingSendyAPHPAppOnWindowsAzureToSendInexpensiveNewsletterEmailViaAmazonSES.aspx)
+
+If you would like to download the Campaign API, check it out here.
+
 [Campaign API](http://forum.sendy.co/discussion/768/added-some-api-functionality/p1)
 
 ## Issues I encountered
