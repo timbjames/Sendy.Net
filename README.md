@@ -39,7 +39,9 @@ When setting up the bounces and complaints handling, Amazon AWS would sit at "Pe
 
 This looked harmful enough, until I realised that `$_SERVER['SCRIPT_FILENAME'])` was returning the path with backward slashes '\' instead of the expected forward slash '/'. As a result, the `certs/cacert.pem` file was not found and not certified.
 
-I could not find an elegant solution, so just hardcoded the path into the file and any other file where the `$server_path` was being set.
+[Leonardo Cortez](http://wishfulcoding.com/) came up with an elegant solution to solve this problem by updating the php code to replace the slashes. So wherever you see a reference to `$_SERVER['SCRIPT_FILENAME']`, replace the code with;
+
+    strtr($_SERVER['SCRIPT_FILENAME'], '\\', '/')    
 
 ###Campaign API
 The Campaign API would fail if your administrator user had set up a brand using the same email address. The Campaign API would attempt to get the app from the DB based on the email, but would not find it. This would basically break the whole api.
