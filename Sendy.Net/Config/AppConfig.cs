@@ -26,8 +26,7 @@ namespace Sendy.Net.Config
             public string InstallationUrl { get { return (string)this["InstallationUrl"]; } set { this["InstallationUrl"] = value; } }    
             [ConfigurationProperty("ApiKey")]
             public string ApiKey { get { return (string)this["ApiKey"]; } set { this["ApiKey"] = value; } }       
-        }
-            
+        }            
                 
     }
 }
