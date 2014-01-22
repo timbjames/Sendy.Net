@@ -2,7 +2,11 @@
 =========
 Sendy.Net is a .Net library that can be used to interact with the Sendy API. Subscribe, Unsubscribe, access subscriber status, lists, create and list campaigns.
 
-It has been built to interact version 1.1.6
+It has been built to interact with version 1.1.6
+
+## Available on Nuget
+
+Sendy.Net is now available to download via [NuGet!](https://www.nuget.org/packages/Sendy.Net/)
 
 ## When to use it?
 If you have recently decided to use [Sendy](http://sendy.co/) over an existing email campaign/newsletter service, then you can simply call the Sendy.Net API from within your code.
