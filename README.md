@@ -2,7 +2,6 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/4yh2m55m7kqkvril?svg=true)](https://ci.appveyor.com/project/timbjames/sendy-net)
 
-=========
 Sendy.Net is a .Net library that can be used to interact with the Sendy API. Subscribe, Unsubscribe, access subscriber status, lists, create and list campaigns.
 
 It has been built to interact with version 1.1.6
