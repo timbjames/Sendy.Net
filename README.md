@@ -53,4 +53,4 @@ This looked harmful enough, until I realised that `$_SERVER['SCRIPT_FILENAME'])`
 The Campaign API would fail if your administrator user had set up a brand using the same email address. The Campaign API would attempt to get the app from the DB based on the email, but would not find it. This would basically break the whole api.
 
 ## Questions?
-Send me a [tweet](http://twitter.com/timbjames) ![My Tweet](http://timbjames.github.io/img/little-birdie.png) or catch me in [JabbR](https://jabbr.net/#/rooms/general-chat) if you can.
+Send me a [tweet](http://twitter.com/timjames_me) ![My Tweet](http://timbjames.github.io/img/little-birdie.png) or catch me in [JabbR](https://jabbr.net/#/rooms/general-chat) (as for timjames.me) if you can.
